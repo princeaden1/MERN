@@ -6,6 +6,10 @@ const customerController = require("../controllers/customerController");
 
 
 router.get("/", customerController.homepage);
+router.get("/add", customerController.addCustomer);
+router.post("/add", customerController.postCustomer);
+
+
 
 
 
